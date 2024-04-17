@@ -33,64 +33,55 @@ The keywords “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL N
 
 ## Goals
 
-Hyperpayment is created to define a decentralized payment system involving multiple parties, yet the participants don’t know each other without permission, affecting more than two parties. It will lead to the decentralization of the Internet.
+Hyperpayment is a protocol of a payment between multiple parties. Difference from other payment systems is that, parties are getting into the system without asking a permission, yet will be eligible for the payment by the rules of the domain.
 
-It aims to:
+Examples where hyperpayment could be used:
+* Revenue of the open source library from the proprietary software.
+* Data monetization if user's data is used by third parties.
+* Crowdfunding.
+* Collaboration over a project on Internet.
 
-
-
+Hyperpayment aims to:
 * Be the internet’s payment protocol.
 * Be minimalistic in terms of syntax.
 * It should be trivial to make it understandable by humans and computers.
 * Be expandable
 * Reduce the risk of human error to as close to zero as possible.
 
-The use cases for Hyperpayment include:
-
-
-
-* Revenue of the open source library from the proprietary software.
-* Data ownership of the user and receiving money if data analysts and AI model trainers used it.
-
 
 ## Specification
 
-Hyperpayment defines a text format of how the particular parties in a domain on the internet interact. Each domain must specify the protocol that follows the hyperpayment protocol.
+Hyperpayment defines a text format of how the particular parties in a domain on the internet interact. The agreement of the specification must be implemented as a computer software. The software must come with the specification reference.
 
 The protocol must specify the
 
-
-
 * Category of the parties.
-* Building that defines how participants are categorized into the categories and the hierarchy of the categories.
+* Identification of participants and how the participants can join.
 * The flow of money between categories is the vectors and splines. The first flow must be defined as the initial point of which category sends what. The flow section must describe the junction of the flow vectors.
-* The source defines all the money. The money may be deposited, withdrawn, or transferred.
-* The resources denoting the money shall be described as category and $ prefix. The flow must be based on the resources.
-* Junctions must be defined using the hooks “before,” “after,” and “along.”
-* Contract of each category that shall define how the money is received and how it is forwarded
+* The resource defines all the money. The money may be deposited, withdrawn, or transferred.
+* The resources denoting the money shall be described as `$` prefix and category. The flow must be based on the resources.
+* Junctions must be defined using the hooks *“before,”* *“after,”*.
+* Contract of each category that shall define how the resource is received and how it is forwarded
 
 The category must not have the keywords whose lemmas are:
 
 “Ara,” “hyperpayment,” “user,” “category,” and “love.” 
 
-This means, “usering,” “categories,” “categorize,” “ara,” “a-ra” must not be used.
+> This means, “users,” “categories,” “categorize,” “ara,” “a-ra” must not be used as the name of the category.
 
 The category must be defined as a single word.
 
 Any hyperpayment protocol of any domain must be expandable. 
 
-The resources that are going through the flow must be retained. The sum of all money that every user in all categories receives must equal the initial resource.
+The sum of all money that every participant in all categories receives must equal the initial resource sent by the first user.
 
 The expanded protocol 
-
-
-
 * must include the web link to the protocol that it expands in the intro. 
 * The expanding protocol may add new categories. 
 * The expanding protocol must not change the category list defined by the parent protocol.
 * The expanding protocol must not change the contract.
 
-Here is the template that the protocols may follow:
+Here is the template that the specifications may follow:
 
 
     Title: Opensource
@@ -140,7 +131,6 @@ Here is the template that the protocols may follow:
 
 
     The business owner defines dependency by exposing the open-source code of their software.
-
 
 
 ## Implementations and Further Reading
