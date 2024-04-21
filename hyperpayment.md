@@ -48,6 +48,11 @@ Hyperpayment aims to:
 * Be expandable
 * Reduce the risk of human error to as close to zero as possible.
 
+Suppose you have manga, a sort of Japanese comic. The smart contracts provided by the blockchains allow for licensing over the internet. The smartcontract defines the payments that it receives. Then, if a person decides to create a new translation into English, he can pay it through the smartcontract, avoiding all the hassles of permission seeking. This allows the manga author to write the comics and make them open. While anyone else could modify it yet, the manga author will receive its payments by the license described in the smartcontract.
+We could implement it using the Ethereum smartcontracts, but they are rigid in the form. Going further, the manga itself is written by many people. Some are painting the characters, some are editing the text, and some are distributing. Some are sponsoring the manga author, and so on. Yet each stakeholder would have the conditions described by the smart contract. The translation could be adopted for the anime, which involves many parties. This means that using a sole smartcontract is not extendable to explore all the forms of the payments. Because how much people own the data and how much they get depends on the context.
+To solve that, the data with many stakeholders are described by the protocol consisting of many smartcontracts. This protocol is called hyperpayment. Suppose there is a hyperpayment protocol for manga creation. It has an author, painter, support, editor, polisher, and many people. Each of them has a condition related to other people by which they receive money through hyperpayment transactions.
+Then, suppose we have another hyperpayment protocol that we call Manga adaptation. This includes the anime studio, manga author, and many other stakeholders. As manga is adopted, the people who wrote the manga will get the data in a different condition than when the manga was created. 
+
 
 ## Specification
 
